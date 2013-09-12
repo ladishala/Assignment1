@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Results" >
+
+    <TextView
+        android:id="@+id/textView_ResultsHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ResutlsHeader" />
+
+    <TextView
+        android:id="@+id/TextView_Question2Res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView_Question1Res"
+        android:layout_below="@+id/TextView_Question1Res"
+        android:layout_marginTop="22dp"
+        android:text="@string/Question2" />
+
+    <TextView
+        android:id="@+id/TextView_Question3Res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView_Question2Res"
+        android:layout_below="@+id/TextView_Question2Res"
+        android:layout_marginTop="22dp"
+        android:text="@string/Question3" />
+
+    <TextView
+        android:id="@+id/TextView_Question4Res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView_Question3Res"
+        android:layout_below="@+id/TextView_Question3Res"
+        android:layout_marginTop="20dp"
+        android:text="@string/Question4" />
+
+      <RatingBar
+          android:id="@+id/RatingBar_Question2Res"
+          style="@style/ratingmedal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/TextView_Question2Res"
+          android:layout_alignRight="@+id/RatingBar_Question1Res"
+          android:layout_below="@+id/TextView_Question2Res"
+          android:isIndicator="true"
+          android:minHeight="25dp"
+          android:numStars="10"
+          android:rating="5"
+          android:stepSize="1" />
+
+      <RatingBar
+          android:id="@+id/RatingBar_Question3Res"
+          style="@style/ratingmedal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/textView_ResultsHead"
+          android:layout_alignRight="@+id/RatingBar_Question4Res"
+          android:layout_below="@+id/TextView_Question3Res"
+          android:isIndicator="true"
+          android:minHeight="25dp"
+          android:numStars="10"
+          android:rating="5"
+          android:stepSize="1" />
+
+      <RatingBar
+          android:id="@+id/RatingBar_Question1Res"
+          style="@style/ratingmedal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/TextView_Question2Res"
+          android:layout_below="@+id/TextView_Question1Res"
+          android:isIndicator="true"
+          android:minHeight="25dp"
+          android:numStars="10"
+          android:rating="5"
+          android:stepSize="1" />
+
+      <TextView
+          android:id="@+id/textView_Question1Results"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignTop="@+id/RatingBar_Question1Res"
+          android:text="@string/number_result" />
+
+      <TextView
+          android:id="@+id/textView_Question2Results"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/textView_Question1Results"
+          android:layout_alignTop="@+id/RatingBar_Question2Res"
+          android:text="@string/number_result" />
+
+      <TextView
+          android:id="@+id/textView_Question3Results"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/textView_Question2Results"
+          android:layout_below="@+id/TextView_Question3Res"
+          android:text="@string/number_result" />
+
+      <TextView
+          android:id="@+id/textView_Question4Results"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/textView_Question3Results"
+          android:layout_alignTop="@+id/RatingBar_Question4Res"
+          android:text="@string/number_result" />
+
+      <RatingBar
+          android:id="@+id/RatingBar_Question4Res"
+          style="@style/ratingmedal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/TextView_Question4Res"
+          android:layout_alignRight="@+id/RatingBar_Question2Res"
+          android:layout_below="@+id/TextView_Question4Res"
+          android:isIndicator="true"
+          android:minHeight="25dp"
+          android:numStars="10"
+          android:rating="5"
+          android:stepSize="1" />
+
+      <TextView
+          android:id="@+id/TextView_Question1Res"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/textView_ResultsHead"
+          android:layout_below="@+id/textView_ResultsHead"
+          android:layout_marginTop="21dp"
+          android:text="@string/Question1" />
+
+      <ImageView
+          android:id="@+id/imageView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/RatingBar_Question4Res"
+          android:layout_alignParentBottom="true"
+          android:layout_alignRight="@+id/textView_Question4Results"
+          android:layout_below="@+id/RatingBar_Question4Res"
+          android:layout_marginTop="14dp" />
+
+</RelativeLayout>
